@@ -1,0 +1,62 @@
+[
+  {
+    "username": "1s2joyrudra224",
+    "userId": "4137331",
+    "phoneNumber": "108",
+    "email": "b211@aaa.com",
+    "gender": "trans",
+    "department": "IT",
+    "address": "Kolkata, India",
+    "_id": "64fcd2c1a63c61413bdbd7ee",
+    "createdAt": "2023-09-09T20:17:05.023Z",
+    "updatedAt": "2023-09-09T20:17:05.023Z"
+  },
+  {
+    "username": "1223s2j4oyrudra224",
+    "userId": "kl3125",
+    "phoneNumber": "108",
+    "email": "b2432121@aaa.com",
+    "gender": "trans",
+    "department": "IT",
+    "address": "Kolkata, India",
+    "_id": "64fcd3afa4c1abe7209a6b1b",
+    "createdAt": "2023-09-09T20:21:03.974Z",
+    "updatedAt": "2023-09-09T20:21:03.974Z"
+  },
+  {
+    "username": "atAr",
+    "userId": "kl3691252",
+    "phoneNumber": "108",
+    "email": "ba1@aaba.com",
+    "gender": "trans",
+    "department": "IT",
+    "address": "Kolkata, India",
+    "_id": "64fcd492bcca5ee0a2bcf552",
+    "createdAt": "2023-09-09T20:24:50.864Z",
+    "updatedAt": "2023-09-09T20:24:50.864Z"
+  },
+  {
+    "username": "atAr3",
+    "userId": "kl36912523",
+    "phoneNumber": "108",
+    "email": "ba1@aabaa.com",
+    "gender": "trans",
+    "department": "IT",
+    "address": "Kolkata, India",
+    "_id": "64fcd4b0fc2fcf0aa8d66328",
+    "createdAt": "2023-09-09T20:25:20.265Z",
+    "updatedAt": "2023-09-09T20:25:20.265Z"
+  },
+  {
+    "username": "atAr33",
+    "userId": "kl336912523",
+    "phoneNumber": "108",
+    "email": "ba1@afabaa.com",
+    "gender": "trans",
+    "department": "IT",
+    "address": "Kolkata, India",
+    "_id": "64fcd61d9b36092020376c95",
+    "createdAt": "2023-09-09T20:31:25.351Z",
+    "updatedAt": "2023-09-09T20:31:25.351Z"
+  }
+]

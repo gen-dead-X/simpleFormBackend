@@ -7,7 +7,7 @@ const formSchema = new mongoose.Schema(
     phoneNumber: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     gender: { type: String, required: true },
-    departement: { type: String, required: true },
+    department: { type: String, required: true },
     address: { type: String, required: true },
   },
   {
