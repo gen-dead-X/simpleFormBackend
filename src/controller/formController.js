@@ -63,6 +63,44 @@ class FormController {
       next(error);
     }
   }
+  async getFormData(req, res, next) {
+    try {
+      const data = await formModel.find();
+
+      if (!data) {
+        res.status(500);
+        next(new Error("Form data fetching failed"));
+      }
+
+      res.status(200).send({
+        message: "Form data fetched successfully",
+        success: true,
+        data,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+  async getFormDataById(req, res, next) {
+    try {
+      const { id } = req.params;
+
+      const form = await formModel.findById(id);
+
+      if (!form) {
+        res.status(404);
+        next(new Error("Form not found"));
+      }
+
+      res.status(200).send({
+        message: "Form data fetched successfully",
+        success: true,
+        data: form,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 export default FormController;

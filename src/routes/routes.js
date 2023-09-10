@@ -14,6 +14,10 @@ app.get("/", (req, res, next) => {
   });
 });
 
+app.get("/get-form-datas", formController.getFormData);
+
+app.get("/get-form-data/:id", formController.getFormDataById);
+
 app.post("/new-form-submission", formController.submitFormData);
 
 export default app;
