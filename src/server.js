@@ -3,11 +3,13 @@ import routes from "./routes/routes.js";
 import cors from "cors";
 
 import dbConnection from "./config/databaseConnector.js";
+import loggerMiddleware from "./middleware/loggerMiddleware.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(loggerMiddleware);
 app.use(routes);
 
 app.use((req, res, next) => {

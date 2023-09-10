@@ -20,4 +20,8 @@ app.get("/get-form-data/:id", formController.getFormDataById);
 
 app.post("/new-form-submission", formController.submitFormData);
 
+app.put("/edit-form/:id", formController.editForm);
+
+app.delete("/delete-form/:id", formController.deleteForm);
+
 export default app;

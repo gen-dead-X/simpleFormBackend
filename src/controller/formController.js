@@ -101,6 +101,48 @@ class FormController {
       next(error);
     }
   }
+  async editForm(req, res, next) {
+    try {
+      const { id } = req.params;
+
+      const result = await formModel.findByIdAndUpdate(id, req.body, {
+        new: true,
+      });
+
+      if (!result) {
+        res.status(500);
+        next(new Error("Form data update failed"));
+      }
+
+      res.status(200).send({
+        message: "Form data updated successfully",
+        success: true,
+        data: result,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+  async deleteForm(req, res, next) {
+    try {
+      const { id } = req.params;
+
+      const result = await formModel.findByIdAndDelete(id);
+
+      if (!result) {
+        res.status(500);
+        next(new Error("Form data delete failed"));
+      }
+
+      res.status(200).send({
+        message: "Form data deleted successfully",
+        success: true,
+        data: result,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 export default FormController;
